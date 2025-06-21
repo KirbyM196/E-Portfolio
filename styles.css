@@ -33,6 +33,15 @@ nav {
     align-items: center;
 }
 
-.nav_link--list {
+.nav__link--list {
     display: flex;
 }
+
+.nav__link--anchor {
+    margin: 0 12px;
+    color: #242424;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
