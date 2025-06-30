@@ -96,6 +96,11 @@ transition: all 300ms ease;
     flex-direction: column;
 }
 
+.about-me__info {
+  display: flex;
+  flex-direction: ;
+}
+
 .about-me__info--container {
     display: flex;
     flex-direction: column;
@@ -128,4 +133,22 @@ transition: all 300ms ease;
 .about-me__info--para {
   font-size: 20px;
   margin-bottom: 28px;
+}
+
+.about-me__link {
+    font-size: 28px;
+    color: #242424;
+    text-decoration: none;
+    padding: 0 16px;
+}
+
+.about-me__img--container {
+    flex: 1;
+    align-self: center;
+    display: flex;
+}
+
+.about-me__img {
+    width: 100%;
+    
 }
