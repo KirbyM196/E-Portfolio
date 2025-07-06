@@ -212,3 +212,16 @@ transition: all 300ms ease;
     transform: scale(1);
     opacity: 1;
 }
+
+/* My - Projects */
+
+h1 {
+    padding: 15px;
+}
+
+.row {
+    flex-direction: ;
+}
+.language__img {
+align-content: center;
+}
