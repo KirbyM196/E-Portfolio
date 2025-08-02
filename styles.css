@@ -120,7 +120,8 @@ nav {
 .about-me__picture {
     width: 100%;
 
-    /* Improving my own picture */
+/* Improving my own picture */
+
     padding-top: 24px 0;
 }
 .about-me__info--title {
@@ -209,6 +210,7 @@ margin-bottom: 40px;
     overflow: hidden;
     position: relative;
 }
+
 .project__wrapper:before {
     content: ;
     position: absolute;
@@ -221,9 +223,11 @@ margin-bottom: 40px;
     transition: opacity 450ms ease;
     z-index: 2;
 }
+
 .project:hover .project__wrapper:before {
     opacity: 0.7;
 }
+
 .project:hover .project__img {
     transform: scale(1.07);
     filter: blur(5px);
@@ -266,4 +270,10 @@ margin-bottom: 40px;
 .project__description--link {
     text-align: left;
     color: #fff;
+}
+
+/* Footer */
+
+footer {
+    background-color: #242424;
 }
