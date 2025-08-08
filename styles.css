@@ -363,7 +363,7 @@ footer {
 .footer__logo--img {
     width: 70px;
     height: 70px;
-}
+} 
 
 .footer__social--link,
 .footer__copyright,
@@ -402,7 +402,7 @@ footer {
 
     .about-me__info--para {
         font-size: 18px;
-    }
+    } 
 
     .language {
         width: calc(100% / 3);
@@ -410,5 +410,21 @@ footer {
 
     .project__description--para {
         font-size: 14px;
+    }
+
+    .project__description {
+        left: 30px;
+        padding-right: 30px;
+    }
+}
+
+/* SMALL PHONES */
+@media (max-width: 480px) {
+    .nav__link:not(:last-child) {
+        display: none;
+    }
+    
+    .project__description--para {
+        display: none;
     }
 }
