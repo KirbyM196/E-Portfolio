@@ -167,12 +167,26 @@ nav {
 }
 
 .about-me__picture--mask {
-    width: 180px;
+    width: 100px;
     height: 100px;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
     margin-bottom: 28px;
+    animation: animate-profile-picture 800ms 200ms backwards;
+}
+
+@keyframes animate-profile-picture {
+0% {
+    transform: scale(0);
+}
+80% {
+    transform: scale(1.1);
+}    
+100% {
+    transform: scale(1);
+
+}
 }
 
 .about-me__picture {
@@ -400,10 +414,6 @@ footer {
 /* Small phones, tablets, large smartphones */
 
 @media (max-width: 768px) {
-.project__description--para {
-    display: none;
-}
-}
 
 nav {
     height: 68px;
@@ -429,6 +439,7 @@ h1 {
     left: 30px;
     padding-right: 30px;
 }
+}    
 
 /* SMALL PHONES */
 
@@ -437,5 +448,29 @@ h1 {
     display: none;
 }
 
+.project__description {
+    padding: 0;
+    left: 0;
+    width: 100%;
+}
 
+.project__description--para {
+    display: none;
+}
+
+.project__description--links {
+    display: flex;
+    justify-content: center;
+}
+
+.project__description--title {
+    font-size: 32px;
+    line-height: 1;
+    text-align: center;
+}
+
+.project__description--sub-title {
+    text-align: center;
+    margin: 12px 0;
+}
 }
