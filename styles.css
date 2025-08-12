@@ -167,11 +167,13 @@ nav {
 }
 
 .about-me__picture--mask {
-    width: 100px;
-    height: 50 px;
-    border-radius: 50%;
+    width: 90px;
+    height: 100 px;
+    border-radius: 50px;
+    scale: 1.5;
+    align-items: center;
     overflow: hidden;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+    box-shadow:  5px 4px 4px 0px rgba(0, 0, 0, 0.16);
     margin-bottom: 28px;
     animation: animate-profile-picture 800ms 200ms backwards;
 }
@@ -197,7 +199,7 @@ nav {
 }
 
 .about-me__info--title {
-    margin-bottom: 16px;
+    margin-bottom:  16px;
     animation: fade-up 650ms 400ms backwards;
 }
 
