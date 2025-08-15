@@ -11,13 +11,7 @@ html {
     scroll-behavior: smooth;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-span {
+h1, h2, h3, h4, h5, h6, span {
     color: #242424;
     text-align: center;
     line-height: 1.25;
@@ -35,6 +29,11 @@ p {
 a {
     text-decoration: none;
     position: relative;
+    transition: opacity 300ms ease;
+}
+
+i:hover {
+    opacity: 0.7;
 }
 
 .link__hover-effect:after {
@@ -154,7 +153,7 @@ nav {
 
 .about-me__info {
     display: flex;
-    flex-direction: ;
+    flex-direction: column;
 }
 
 .about-me__info--container {
@@ -167,13 +166,13 @@ nav {
 }
 
 .about-me__picture--mask {
-    width: 90px;
+    width: 100px;
     height: 100 px;
-    border-radius: 50px;
+    border-radius: 100px;
     scale: 1.5;
     align-items: center;
     overflow: hidden;
-    box-shadow:  5px 4px 4px 0px rgba(0, 0, 0, 0.16);
+    box-shadow:  1px 1px 7px 0px rgba(29, 6, 80, 0.16);
     margin-bottom: 28px;
     animation: animate-profile-picture 800ms 200ms backwards;
 }
@@ -191,11 +190,11 @@ nav {
 }
 
 .about-me__picture {
-    width: 100%;
+    width: 80%;
 
 /* Improving my own picture */
-    transform: scale(1.5);
-    padding-top: 8px;
+    transform: scale(1.3);
+    padding-left: 12px;
 }
 
 .about-me__info--title {
@@ -241,12 +240,29 @@ nav {
     animation: fade-in 1200ms 800ms backwards;
 }
 
-@keyframes {
-    0 {
+@keyframes fade-in {
+    0% {
         opacity: 0;
     }
     100% {
         opacity: 1;
+    }
+}
+
+.wave {
+    display: inline-block;
+    animation: animate-wave 500ms infinite ease-in-out;
+}
+
+@keyframes animate-wave {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0);
     }
 }
 
